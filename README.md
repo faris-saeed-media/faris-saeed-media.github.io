@@ -323,3 +323,25 @@ The ticker includes:
 - Audience analytics
 - Creative development
 - Short form storytelling
+
+
+## Mobile optimized version
+
+This version adds responsive layouts for phones and tablets, including:
+
+- mobile navigation menu with outside click and Escape support
+- stacked hero layout with responsive portrait and featured Reel card
+- full width social buttons on small phones
+- single column work cards and case studies
+- responsive YouTube and Instagram embeds
+- mobile friendly Reel statistics
+- single column photo gallery
+- touch sized buttons and links
+- safe spacing for phone notches and browser toolbars
+- mobile lightbox controls
+- responsive skills ticker and contact section
+
+Tested breakpoints:
+
+- tablet and small laptop: 820px and below
+- standard phones: 520px and below

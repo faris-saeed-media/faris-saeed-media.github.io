@@ -235,3 +235,45 @@ royaShowMore?.addEventListener("click", () => {
     ? "Show fewer Instagram pieces"
     : "Show all Instagram work";
 });
+
+
+// Mobile navigation improvements
+const siteHeader = document.querySelector(".site-header");
+
+const closeMobileNavigation = () => {
+  if (!siteNav || !menuToggle) return;
+  siteNav.classList.remove("open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Open navigation menu");
+};
+
+menuToggle?.addEventListener("click", () => {
+  const isOpen = siteNav?.classList.contains("open");
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
+});
+
+document.addEventListener("click", (event) => {
+  if (
+    siteNav?.classList.contains("open") &&
+    siteHeader &&
+    !siteHeader.contains(event.target)
+  ) {
+    closeMobileNavigation();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && siteNav?.classList.contains("open")) {
+    closeMobileNavigation();
+    menuToggle?.focus();
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 820) {
+    closeMobileNavigation();
+  }
+});
