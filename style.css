@@ -2485,3 +2485,154 @@ iframe {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Clear ordering and separation between major work samples */
+.roya-work-section,
+.zaytoon-work-section {
+  position: relative;
+  isolation: isolate;
+  width: min(calc(100% - 36px), var(--max-width));
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
+.roya-work-section::before,
+.zaytoon-work-section::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.roya-work-section::after,
+.zaytoon-work-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(183, 240, 212, 0.38),
+    transparent
+  );
+}
+
+.roya-work-section::before {
+  background:
+    radial-gradient(circle at 12% 12%, rgba(47, 211, 162, 0.07), transparent 28rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.008)),
+    #0d0e11;
+}
+
+.zaytoon-work-section::before {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(47, 211, 162, 0.14), transparent 30rem),
+    radial-gradient(circle at 12% 82%, rgba(15, 128, 104, 0.11), transparent 28rem),
+    linear-gradient(180deg, #09130f, #0b0d0d);
+}
+
+.work-chapter {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 74px);
+  align-items: start;
+  margin-bottom: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.work-chapter-number {
+  color: var(--accent);
+  font-size: clamp(4.8rem, 9vw, 8.5rem);
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -0.09em;
+}
+
+.work-chapter-copy {
+  max-width: 900px;
+}
+
+.work-chapter-label {
+  margin: 0 0 12px;
+  color: var(--accent-3);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.work-chapter-copy h2 {
+  margin: 0;
+  font-size: clamp(3.4rem, 7vw, 6.8rem);
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+}
+
+.work-chapter-copy > p:last-child {
+  max-width: 680px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.work-chapter-roya .work-chapter-copy h2 {
+  color: var(--text);
+}
+
+.work-chapter-zaytoon .work-chapter-copy h2 {
+  background: linear-gradient(90deg, var(--accent-3), var(--accent), var(--accent-2));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.roya-work-section + .zaytoon-work-section {
+  margin-top: 34px;
+}
+
+.zaytoon-work-section + .appointment-gallery-section {
+  margin-top: 34px;
+  padding-top: 130px;
+  border-top: 1px solid var(--line);
+}
+
+/* The internal case-study panels now sit clearly below each chapter title. */
+.roya-case-study,
+.zaytoon-case-study {
+  box-shadow: 0 28px 75px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 760px) {
+  .roya-work-section,
+  .zaytoon-work-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .work-chapter {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-bottom: 42px;
+    padding-bottom: 34px;
+  }
+
+  .work-chapter-number {
+    font-size: 4.4rem;
+  }
+
+  .roya-work-section + .zaytoon-work-section,
+  .zaytoon-work-section + .appointment-gallery-section {
+    margin-top: 18px;
+  }
+}

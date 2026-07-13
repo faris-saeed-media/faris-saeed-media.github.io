@@ -204,3 +204,33 @@ The project is now described as a cross platform creator brand built primarily a
 
 - Instagram
 - TikTok
+
+
+## Work sample ordering and separation
+
+The detailed portfolio sections now follow the same order as the Selected Work cards:
+
+1. Roya Media Group
+2. @realzaytoon
+3. The Appointment gallery
+
+Roya and @realzaytoon each have:
+
+- a numbered chapter heading
+- a distinct full width background treatment
+- more spacing between case studies
+- a clear divider line
+- separate newsroom and independent-platform labels
+
+
+## Selected Work title update
+
+The five main cards now use direct project or organization names:
+
+1. Roya Media Group
+2. @realzaytoon
+3. HUUPE
+4. The Appointment
+5. Seagull Media
+
+The unfinished placeholder card was removed so the section only contains completed work.
