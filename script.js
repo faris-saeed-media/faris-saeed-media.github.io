@@ -80,7 +80,7 @@ const reelExternalLink = document.querySelector(".reel-external-link");
 const modalTitle = document.querySelector(".modal-title");
 
 const renderInstagramEmbed = (url, title) => {
-  modalTitle.textContent = title || "Roya digital journalism";
+  modalTitle.textContent = title || "Instagram portfolio work";
   reelExternalLink.href = url;
 
   instagramEmbedSlot.innerHTML = `
@@ -104,7 +104,7 @@ const renderInstagramEmbed = (url, title) => {
 openReelButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const reelUrl = button.dataset.reel;
-    const reelTitle = button.dataset.title || "Roya digital journalism";
+    const reelTitle = button.dataset.title || "Instagram portfolio work";
 
     renderInstagramEmbed(reelUrl, reelTitle);
     modal.showModal();

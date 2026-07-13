@@ -166,3 +166,41 @@ The hero now uses:
 - buttons for Work, Instagram, and TikTok
 
 The old `Watch featured skit` button was removed. The featured skit card remains visible on the right.
+
+
+## @realzaytoon work sample
+
+The independent platform card now links to a dedicated `#realzaytoon-work` section.
+
+The section includes six selected Reels and the performance data supplied for each one.
+
+Combined performance across the six selected Reels:
+
+- 1.633 million likes
+- 12,216 comments
+- 46,013 reposts
+- 687,900 reshares
+
+The links were cleaned to remove Instagram tracking parameters.
+
+
+## Cross platform @realzaytoon update
+
+The project card now clearly identifies @realzaytoon as an independent cross platform creator brand spanning Instagram, TikTok, and YouTube.
+
+The card highlights:
+
+- 130M+ total views
+- 10.3M TikTok likes
+
+The full case study separates overall platform impact from the performance of the six selected Instagram Reels.
+
+
+## Instagram and TikTok focus
+
+This revision removes YouTube from the @realzaytoon positioning.
+
+The project is now described as a cross platform creator brand built primarily across:
+
+- Instagram
+- TikTok

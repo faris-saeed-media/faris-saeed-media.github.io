@@ -2063,3 +2063,425 @@ iframe {
     transform: scale(1.03);
   }
 }
+
+
+/* @realzaytoon creator case study */
+#realzaytoon-work {
+  scroll-margin-top: 120px;
+}
+
+.platform-card-copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.platform-handle {
+  margin-bottom: 18px;
+  padding: 8px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.14);
+  font-size: 0.8rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(10px);
+}
+
+.platform-stat-label {
+  margin-top: -7px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.zaytoon-work-section {
+  padding: 130px 0 90px;
+}
+
+.zaytoon-case-study {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 70px;
+  padding: clamp(30px, 6vw, 72px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background:
+    radial-gradient(circle at 12% 12%, rgba(47, 211, 162, 0.18), transparent 30%),
+    radial-gradient(circle at 88% 84%, rgba(15, 128, 104, 0.18), transparent 32%),
+    var(--surface);
+}
+
+.zaytoon-case-study-heading h2 {
+  max-width: 780px;
+  margin: 22px 0 0;
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+}
+
+.zaytoon-wordmark {
+  width: fit-content;
+  padding: 10px 16px;
+  border: 1px solid rgba(183, 240, 212, 0.32);
+  border-radius: 999px;
+  background: rgba(47, 211, 162, 0.1);
+  color: var(--accent-3);
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 850;
+  letter-spacing: -0.035em;
+}
+
+.zaytoon-case-study-copy {
+  align-self: end;
+}
+
+.zaytoon-case-study-copy > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.zaytoon-role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.zaytoon-role-tags span {
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 0.82rem;
+}
+
+.zaytoon-summary-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.zaytoon-summary-metrics div {
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background:
+    linear-gradient(145deg, rgba(47, 211, 162, 0.08), transparent),
+    rgba(255, 255, 255, 0.03);
+}
+
+.zaytoon-summary-metrics strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.zaytoon-summary-metrics span {
+  display: block;
+  max-width: 180px;
+  margin-top: 9px;
+  color: var(--muted);
+}
+
+.zaytoon-work-heading {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: end;
+  margin: 90px 0 28px;
+}
+
+.zaytoon-work-heading h3 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.zaytoon-work-heading > p {
+  max-width: 570px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.03rem;
+}
+
+.zaytoon-reel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.zaytoon-reel-card {
+  position: relative;
+  display: flex;
+  min-height: 410px;
+  flex-direction: column;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 84% 10%, rgba(183, 240, 212, 0.18), transparent 26%),
+    linear-gradient(145deg, rgba(47, 211, 162, 0.1), rgba(15, 128, 104, 0.025)),
+    var(--surface);
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease;
+}
+
+.zaytoon-reel-card:hover {
+  border-color: rgba(183, 240, 212, 0.46);
+  transform: translateY(-5px);
+}
+
+.zaytoon-reel-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.zaytoon-reel-main {
+  display: flex;
+  margin: auto 0 30px;
+  flex-direction: column;
+}
+
+.zaytoon-reel-main strong {
+  font-size: clamp(4rem, 7vw, 7.2rem);
+  line-height: 0.8;
+  letter-spacing: -0.09em;
+}
+
+.zaytoon-reel-main > span {
+  margin-top: 14px;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.zaytoon-reel-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.zaytoon-reel-metrics div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.zaytoon-reel-metrics strong {
+  font-size: 0.95rem;
+}
+
+.zaytoon-reel-metrics span {
+  color: var(--muted);
+  font-size: 0.69rem;
+}
+
+.zaytoon-reel-card .text-link {
+  width: fit-content;
+  margin-top: 26px;
+}
+
+.zaytoon-profile-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+@media (max-width: 1000px) {
+  .zaytoon-case-study {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .zaytoon-summary-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .zaytoon-reel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .zaytoon-work-section {
+    padding-top: 86px;
+  }
+
+  .zaytoon-work-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .zaytoon-summary-metrics,
+  .zaytoon-reel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .zaytoon-reel-card {
+    min-height: 350px;
+  }
+
+  .zaytoon-reel-main strong {
+    font-size: clamp(4.4rem, 20vw, 6.8rem);
+  }
+}
+
+
+/* Cross platform @realzaytoon card */
+.platform-card-copy {
+  width: min(82%, 500px);
+}
+
+.platform-card-subtitle {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.platform-card-metrics {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.platform-card-metrics div {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(12px);
+}
+
+.platform-card-metrics strong {
+  display: block;
+  font-size: clamp(2.3rem, 5vw, 4.7rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+}
+
+.platform-card-metrics span {
+  display: block;
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.zaytoon-platform-impact {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 50px;
+  align-items: end;
+  margin-top: 18px;
+  padding: clamp(28px, 5vw, 54px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background:
+    radial-gradient(circle at 85% 15%, rgba(183, 240, 212, 0.15), transparent 28%),
+    linear-gradient(145deg, rgba(47, 211, 162, 0.08), transparent),
+    var(--surface);
+}
+
+.zaytoon-platform-impact h3 {
+  max-width: 620px;
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.zaytoon-platform-impact-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.zaytoon-platform-impact-metrics div {
+  padding: 20px;
+  border-left: 1px solid var(--line);
+}
+
+.zaytoon-platform-impact-metrics strong {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.zaytoon-platform-impact-metrics span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.zaytoon-sample-label {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 54px 0 18px;
+}
+
+.zaytoon-sample-label .eyebrow {
+  margin-bottom: 0;
+}
+
+.zaytoon-sample-label > p:last-child {
+  max-width: 560px;
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .zaytoon-platform-impact {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .zaytoon-platform-impact-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .zaytoon-platform-impact-metrics div {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .zaytoon-sample-label {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .platform-card-metrics {
+    grid-template-columns: 1fr;
+  }
+}
