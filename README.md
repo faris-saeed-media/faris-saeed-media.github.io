@@ -259,3 +259,67 @@ The HUUPE case study contains:
 - direct links to both videos
 
 The supplied video tracking parameters were removed from the clean portfolio URLs.
+
+
+## Homepage statistic update
+
+The third homepage metric now shows:
+
+- 11M+ likes across platforms
+
+
+## About section removal
+
+The About section and its navigation link were removed. The portfolio now moves directly from the work sections into Contact.
+
+
+## The Appointment and Seagull Media sections
+
+The detailed work order now continues with:
+
+4. The Appointment
+5. Seagull Media
+
+The Appointment now includes:
+
+- a numbered `04` chapter heading
+- a `Final short film coming soon` status panel
+- the existing behind the scenes gallery
+
+Seagull Media now includes:
+
+- a link from its Selected Work card
+- a numbered `05` chapter heading
+- campaign performance metrics
+- a polished placeholder for future campaign, Reel, and radio samples
+
+
+## Overall metrics placement
+
+The three cards showing:
+
+- 120K+ followers
+- 130M+ short form views
+- 11M+ likes
+
+were removed from the space between the hero and Selected Work.
+
+They now appear inside the detailed @realzaytoon section under an `Overall platform impact` heading, where the numbers have clearer context.
+
+
+## Restored scrolling skills row
+
+A dedicated Skills and Tools section now appears between Seagull Media and Contact.
+
+The ticker includes:
+
+- Scriptwriting
+- Breaking news speed
+- Adobe Premiere Pro
+- After Effects
+- On camera reporting
+- Social strategy
+- Video production
+- Audience analytics
+- Creative development
+- Short form storytelling
