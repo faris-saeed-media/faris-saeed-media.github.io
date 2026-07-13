@@ -137,3 +137,20 @@ Examples:
 - `object-position: center 20%;`
 - `object-position: 45% top;`
 - `object-position: 60% 15%;`
+
+
+## Featured @realzaytoon Reel
+
+The hero now features this personal-platform Reel:
+
+`https://www.instagram.com/reel/DNgWHvNv1cz/`
+
+The card describes it as an original satirical skit about Lebanon’s uniquely complex religious mix. The existing Roya case study remains unchanged lower on the page.
+
+
+## Featured Reel performance
+
+The hero card now displays:
+
+- 375K likes
+- 158K reshares
