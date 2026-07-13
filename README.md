@@ -64,3 +64,18 @@ Search `index.html` for:
 - `faris.saeed1020@gmail.com`
 - `Faris_Saeed_Resume.pdf`
 - the Instagram Reel URL
+
+
+## The Appointment gallery
+
+The Appointment card now includes a link to `#appointment-gallery`.
+
+The gallery uses:
+
+- `assets/appointment-1.jpg` through `assets/appointment-7.jpg`
+- a responsive editorial grid
+- click to enlarge
+- previous and next controls
+- left and right arrow keyboard navigation
+
+To change an image caption, edit the matching `data-caption` value in `index.html`.

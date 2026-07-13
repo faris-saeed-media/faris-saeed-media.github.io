@@ -144,3 +144,56 @@ if (window.matchMedia("(pointer: fine)").matches) {
     });
   });
 }
+
+
+// The Appointment photo gallery and lightbox
+const galleryTiles = Array.from(document.querySelectorAll(".gallery-tile"));
+const galleryLightbox = document.querySelector(".gallery-lightbox");
+const galleryLightboxImage = document.querySelector(".gallery-lightbox-image");
+const galleryLightboxCaption = document.querySelector(".gallery-lightbox-caption");
+const galleryLightboxCounter = document.querySelector(".gallery-lightbox-counter");
+const galleryLightboxClose = document.querySelector(".gallery-lightbox-close");
+const galleryLightboxPrev = document.querySelector(".gallery-lightbox-prev");
+const galleryLightboxNext = document.querySelector(".gallery-lightbox-next");
+
+let activeGalleryIndex = 0;
+
+const updateGalleryLightbox = (index) => {
+  activeGalleryIndex = (index + galleryTiles.length) % galleryTiles.length;
+  const tile = galleryTiles[activeGalleryIndex];
+  const image = tile.querySelector("img");
+
+  galleryLightboxImage.src = tile.dataset.full;
+  galleryLightboxImage.alt = image.alt;
+  galleryLightboxCaption.textContent = tile.dataset.caption;
+  galleryLightboxCounter.textContent =
+    `${String(activeGalleryIndex + 1).padStart(2, "0")} / ${String(galleryTiles.length).padStart(2, "0")}`;
+};
+
+const openGalleryLightbox = (index) => {
+  updateGalleryLightbox(index);
+  galleryLightbox.showModal();
+  document.body.classList.add("modal-open");
+};
+
+const closeGalleryLightbox = () => {
+  galleryLightbox.close();
+  document.body.classList.remove("modal-open");
+};
+
+galleryTiles.forEach((tile, index) => {
+  tile.addEventListener("click", () => openGalleryLightbox(index));
+});
+
+galleryLightboxClose?.addEventListener("click", closeGalleryLightbox);
+galleryLightboxPrev?.addEventListener("click", () => updateGalleryLightbox(activeGalleryIndex - 1));
+galleryLightboxNext?.addEventListener("click", () => updateGalleryLightbox(activeGalleryIndex + 1));
+
+galleryLightbox?.addEventListener("click", (event) => {
+  if (event.target === galleryLightbox) closeGalleryLightbox();
+});
+
+galleryLightbox?.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft") updateGalleryLightbox(activeGalleryIndex - 1);
+  if (event.key === "ArrowRight") updateGalleryLightbox(activeGalleryIndex + 1);
+});
