@@ -1,25 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Faris Saeed is a digital journalist, content creator, producer, and on camera storyteller relocating to the San Francisco Bay Area."
+  />
+  <meta name="theme-color" content="#0b0b0d" />
   <title>Faris Saeed | Digital Journalist and Producer</title>
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <main>
-    <h1>Faris Saeed</h1>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-    <p>Digital Journalist, Content Creator, and Producer</p>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Faris Saeed home">
+      <span class="logo-mark">FS</span>
+      <span class="logo-text">Faris Saeed</span>
+    </a>
 
-    <p>Relocating to the San Francisco Bay Area</p>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
 
-    <a href="mailto:faris.saeed1020@gmail.com">Contact Me</a>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-pill" href="assets/Faris_Saeed_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          Digital journalist • Creator • Producer
+        </p>
+
+        <h1>
+          Stories that feel
+          <span class="accent-text">alive.</span>
+        </h1>
+
+        <p class="hero-summary">
+          I build social first journalism, on camera stories, and digital experiences
+          designed to inform people and hold their attention.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work</a>
+          <button
+            class="button button-secondary open-reel"
+            data-reel="https://www.instagram.com/reel/DVryNlrjkOO/"
+          >
+            Watch featured reel
+          </button>
+        </div>
+
+        <div class="availability">
+          <span class="status-dot" aria-hidden="true"></span>
+          Relocating to the San Francisco Bay Area
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="120">
+        <article class="phone-card tilt-card">
+          <div class="phone-top">
+            <span>Featured story</span>
+            <span>Roya Media Group</span>
+          </div>
+
+          <div class="video-poster">
+            <div class="poster-gradient"></div>
+            <div class="poster-copy">
+              <span class="poster-tag">DIGITAL JOURNALISM</span>
+              <h2>Fast, visual reporting built for the feed.</h2>
+            </div>
+            <button
+              class="play-button open-reel"
+              aria-label="Play featured Instagram reel"
+              data-reel="https://www.instagram.com/reel/DVryNlrjkOO/"
+            >
+              <span aria-hidden="true">▶</span>
+            </button>
+          </div>
+
+          <div class="phone-meta">
+            <div>
+              <strong>31.5K</strong>
+              <span>likes</span>
+            </div>
+            <div>
+              <strong>Research</strong>
+              <span>script • produce • edit</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="floating-note note-one">120K+ followers</div>
+        <div class="floating-note note-two">130M+ views</div>
+      </div>
+    </section>
+
+    <section class="stats section" aria-label="Audience impact">
+      <div class="stat-card reveal">
+        <span class="stat-number" data-target="120" data-suffix="K+">0</span>
+        <span class="stat-label">followers built independently</span>
+      </div>
+      <div class="stat-card reveal" data-delay="80">
+        <span class="stat-number" data-target="130" data-suffix="M+">0</span>
+        <span class="stat-label">total short form views</span>
+      </div>
+      <div class="stat-card reveal" data-delay="160">
+        <span class="stat-number" data-target="31.5" data-decimals="1" data-suffix="K">0</span>
+        <span class="stat-label">likes on a featured Roya reel</span>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Journalism, production, and on camera storytelling.</h2>
+      </div>
+
+      <div class="filter-row reveal" role="group" aria-label="Filter portfolio projects">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="journalism">Journalism</button>
+        <button class="filter-button" data-filter="creator">Creator work</button>
+        <button class="filter-button" data-filter="production">Production</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured-project reveal tilt-card" data-category="journalism">
+          <div class="project-media project-media-roya">
+            <span class="project-index">01</span>
+            <div class="media-label">Roya Media Group</div>
+          </div>
+          <div class="project-body">
+            <div class="project-kicker">
+              <span>Digital journalism</span>
+              <span>31.5K likes</span>
+            </div>
+            <h3>Social first reporting for a major regional newsroom</h3>
+            <p>
+              Researched emerging stories, scripted concise videos, appeared on camera,
+              and edited content for fast moving social platforms.
+            </p>
+            <div class="project-actions">
+              <button
+                class="text-link open-reel"
+                data-reel="https://www.instagram.com/reel/DVryNlrjkOO/"
+              >
+                View Instagram reel ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="creator" data-delay="80">
+          <div class="project-media project-media-platform">
+            <span class="project-index">02</span>
+            <div class="big-type">130M</div>
+          </div>
+          <div class="project-body">
+            <div class="project-kicker">
+              <span>Independent platform</span>
+              <span>120K+ followers</span>
+            </div>
+            <h3>Building an audience through sharp, repeatable storytelling</h3>
+            <p>
+              Owned the complete content lifecycle from ideation and scripting to filming,
+              editing, publishing, and performance analysis.
+            </p>
+            <a class="text-link" href="#contact">Ask for additional examples ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="production" data-delay="120">
+          <div class="project-media project-media-huupe">
+            <span class="project-index">03</span>
+            <div class="big-type">HUUPE</div>
+          </div>
+          <div class="project-body">
+            <div class="project-kicker">
+              <span>Executive producer</span>
+              <span>Chicago</span>
+            </div>
+            <h3>End to end production across a two day commercial shoot</h3>
+            <p>
+              Coordinated a cast and crew of more than ten people while balancing timelines,
+              creative direction, logistics, and final delivery.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="production" data-delay="160">
+          <div class="project-media project-media-film">
+            <span class="project-index">04</span>
+            <div class="film-frame">
+              <span>THE APPOINTMENT</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-kicker">
+              <span>Lead actor and producer</span>
+              <span>Los Angeles</span>
+            </div>
+            <h3>Independent film performance and creative development</h3>
+            <p>
+              Led the on screen performance while supporting production planning,
+              creative direction, and execution.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="creator" data-delay="200">
+          <div class="project-media project-media-seagull">
+            <span class="project-index">05</span>
+            <div class="big-type">100K+</div>
+          </div>
+          <div class="project-body">
+            <div class="project-kicker">
+              <span>Brand strategy</span>
+              <span>7K+ engagements</span>
+            </div>
+            <h3>Social and radio concepts built around audience behavior</h3>
+            <p>
+              Developed Reels, skit concepts, challenges, and radio segments informed by
+              platform performance and cultural relevance.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="journalism" data-delay="240">
+          <div class="project-media project-media-placeholder">
+            <span class="project-index">06</span>
+            <div class="placeholder-copy">
+              <span>Add your next story here</span>
+              <small>YouTube • Vimeo • Instagram • TikTok</small>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-kicker">
+              <span>Expandable portfolio</span>
+              <span>Easy to update</span>
+            </div>
+            <h3>Turn any public video into a clean portfolio case study</h3>
+            <p>
+              Add the link, explain your role, and include the performance or impact.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-panel reveal">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>I combine newsroom instincts with creator economy speed.</h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            I am a digital journalist, producer, and content creator completing a degree
+            in Communication Arts at the University of Wisconsin Madison. My work spans
+            social journalism, branded production, independent filmmaking, and audience
+            focused storytelling.
+          </p>
+          <p>
+            I am currently relocating to the Bay Area and looking to contribute strong
+            news judgment, visual storytelling, on camera communication, and platform
+            fluency to an ambitious newsroom or creative team.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-ticker reveal" aria-label="Skills">
+        <div class="ticker-track">
+          <span>Adobe Premiere Pro</span>
+          <span>After Effects</span>
+          <span>On camera reporting</span>
+          <span>Social strategy</span>
+          <span>Video production</span>
+          <span>Audience analytics</span>
+          <span>Scriptwriting</span>
+          <span>Breaking news speed</span>
+
+          <span aria-hidden="true">Adobe Premiere Pro</span>
+          <span aria-hidden="true">After Effects</span>
+          <span aria-hidden="true">On camera reporting</span>
+          <span aria-hidden="true">Social strategy</span>
+          <span aria-hidden="true">Video production</span>
+          <span aria-hidden="true">Audience analytics</span>
+          <span aria-hidden="true">Scriptwriting</span>
+          <span aria-hidden="true">Breaking news speed</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Let’s work together</p>
+        <h2>Have a story, role, or production in mind?</h2>
+        <p>
+          Reach out for journalism samples, a full reel, production work, or collaboration.
+        </p>
+
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:faris.saeed1020@gmail.com">
+            faris.saeed1020@gmail.com
+          </a>
+          <a class="button button-secondary" href="assets/Faris_Saeed_Resume.pdf" target="_blank" rel="noopener">
+            View résumé
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Faris Saeed</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <dialog class="reel-modal" aria-label="Featured Instagram reel">
+    <div class="modal-bar">
+      <span>Featured digital journalism</span>
+      <button class="modal-close" aria-label="Close reel">Close</button>
+    </div>
+
+    <div class="reel-shell">
+      <blockquote
+        class="instagram-media"
+        data-instgrm-captioned
+        data-instgrm-permalink="https://www.instagram.com/reel/DVryNlrjkOO/"
+        data-instgrm-version="14"
+      >
+        <a href="https://www.instagram.com/reel/DVryNlrjkOO/" target="_blank" rel="noopener">
+          View this reel on Instagram
+        </a>
+      </blockquote>
+
+      <p class="embed-note">
+        Instagram embeds work for public posts. If the embed is blocked, use the button below.
+      </p>
+
+      <a
+        class="button button-primary"
+        href="https://www.instagram.com/reel/DVryNlrjkOO/"
+        target="_blank"
+        rel="noopener"
+      >
+        Open reel on Instagram
+      </a>
+    </div>
+  </dialog>
+
+  <script async src="https://www.instagram.com/embed.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
