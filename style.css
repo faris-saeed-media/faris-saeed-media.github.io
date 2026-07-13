@@ -1820,3 +1820,246 @@ iframe {
     min-height: 510px;
   }
 }
+
+
+/* Hero headshot treatment */
+.hero-visual {
+  min-height: 720px;
+  align-content: center;
+  isolation: isolate;
+}
+
+.hero-portrait {
+  position: absolute;
+  top: 50%;
+  left: -19%;
+  z-index: 1;
+  width: min(68%, 470px);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  transform: translateY(-50%) rotate(-3deg);
+  pointer-events: none;
+  filter: drop-shadow(0 35px 70px rgba(0, 0, 0, 0.48));
+}
+
+.hero-portrait::before {
+  content: "";
+  position: absolute;
+  inset: 4% 5% 2%;
+  z-index: 1;
+  border: 1px solid rgba(183, 240, 212, 0.28);
+  border-radius: 48% 52% 43% 57% / 38% 42% 58% 62%;
+  box-shadow:
+    inset 0 0 80px rgba(4, 17, 13, 0.16),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.hero-portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background:
+    linear-gradient(180deg, transparent 52%, rgba(11, 11, 13, 0.86) 95%),
+    radial-gradient(circle at 50% 35%, transparent 42%, rgba(11, 11, 13, 0.26) 79%);
+  pointer-events: none;
+}
+
+.hero-portrait-glow {
+  position: absolute;
+  inset: 12% 4% 6%;
+  z-index: -1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 48% 35%, rgba(183, 240, 212, 0.42), transparent 34%),
+    radial-gradient(circle at 42% 65%, rgba(47, 211, 162, 0.3), transparent 48%);
+  filter: blur(34px);
+}
+
+.hero-portrait-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 48% 52% 43% 57% / 38% 42% 58% 62%;
+  filter:
+    saturate(0.88)
+    contrast(1.04)
+    brightness(0.87);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 8%,
+    #000 78%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 8%,
+    #000 78%,
+    transparent 100%
+  );
+  transition:
+    opacity 650ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 500ms ease;
+}
+
+.hero-portrait-primary {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.hero-portrait-secondary {
+  opacity: 0;
+  transform: scale(1.09);
+}
+
+.hero-visual:hover .hero-portrait-primary {
+  opacity: 0;
+  transform: scale(1.08);
+}
+
+.hero-visual:hover .hero-portrait-secondary {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.hero-portrait-label {
+  position: absolute;
+  right: 6%;
+  bottom: 9%;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  padding: 11px 15px;
+  border: 1px solid rgba(183, 240, 212, 0.24);
+  border-radius: 16px;
+  background: rgba(8, 20, 17, 0.68);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(14px);
+}
+
+.hero-portrait-label span {
+  color: var(--accent);
+  font-size: 0.66rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-portrait-label strong {
+  margin-top: 2px;
+  font-size: 0.92rem;
+}
+
+.hero-visual .phone-card {
+  position: relative;
+  z-index: 3;
+  justify-self: end;
+  width: min(79%, 430px);
+  transform: translateX(7%);
+}
+
+.hero-visual .note-one {
+  z-index: 5;
+}
+
+.hero-visual .note-two {
+  z-index: 5;
+  left: 5%;
+}
+
+@media (max-width: 1120px) {
+  .hero-portrait {
+    left: -9%;
+    width: min(58%, 420px);
+  }
+
+  .hero-visual .phone-card {
+    width: min(76%, 410px);
+    transform: translateX(4%);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-visual {
+    min-height: 760px;
+    display: block;
+  }
+
+  .hero-portrait {
+    top: 47%;
+    left: -3%;
+    width: min(58%, 430px);
+  }
+
+  .hero-visual .phone-card {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: min(64%, 420px);
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-visual {
+    min-height: 800px;
+    margin-top: 36px;
+  }
+
+  .hero-portrait {
+    top: 36%;
+    left: 50%;
+    width: min(86%, 450px);
+    transform: translate(-50%, -50%) rotate(-2deg);
+  }
+
+  .hero-visual .phone-card {
+    top: auto;
+    right: 50%;
+    bottom: 0;
+    width: min(92%, 430px);
+    transform: translateX(50%);
+  }
+
+  .hero-portrait-label {
+    right: 10%;
+    bottom: 14%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    min-height: 750px;
+  }
+
+  .hero-portrait {
+    top: 31%;
+    width: 94%;
+  }
+
+  .hero-visual .phone-card {
+    width: 96%;
+  }
+
+  .hero-portrait-label {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-portrait-secondary {
+    display: none;
+  }
+
+  .hero-visual:hover .hero-portrait-primary {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}

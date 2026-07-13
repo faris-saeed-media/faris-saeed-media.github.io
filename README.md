@@ -111,3 +111,29 @@ The Roya project card now links to a dedicated case study containing:
 - a reusable Instagram modal
 
 The archive labels are intentionally generic because only URLs were supplied. Replace labels like `Reel 01` with the actual story headlines inside `index.html` as you refine the portfolio.
+
+
+## Hero headshots
+
+This version expects both files in the existing `assets` folder:
+
+- `assets/faris_saeed.JPG`
+- `assets/faris_saeed_2.JPG`
+
+The first is the default hero portrait. The second crossfades in when the visitor hovers over the hero area.
+
+GitHub Pages filenames are case sensitive, so keep `.JPG` capitalized exactly as shown.
+
+To change how a face is cropped, edit this rule near the bottom of `style.css`:
+
+```css
+.hero-portrait-image {
+  object-position: center top;
+}
+```
+
+Examples:
+
+- `object-position: center 20%;`
+- `object-position: 45% top;`
+- `object-position: 60% 15%;`
