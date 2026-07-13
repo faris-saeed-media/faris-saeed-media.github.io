@@ -154,3 +154,15 @@ The hero card now displays:
 
 - 375K likes
 - 158K reshares
+
+
+## Hero introduction update
+
+The hero now uses:
+
+- `Faris Saeed`
+- `Portfolio.` as the green gradient line
+- a revised description covering journalism, satire, and on camera storytelling
+- buttons for Work, Instagram, and TikTok
+
+The old `Watch featured skit` button was removed. The featured skit card remains visible on the right.
