@@ -5,9 +5,9 @@
   --text: #f7f5f2;
   --muted: #aaa6b1;
   --line: rgba(255, 255, 255, 0.13);
-  --accent: #ff5ea8;
-  --accent-2: #a28bff;
-  --accent-3: #ffb35c;
+  --accent: #2fd3a2;
+  --accent-2: #0f8068;
+  --accent-3: #b7f0d4;
   --max-width: 1240px;
   --radius-large: 34px;
   --radius-medium: 24px;
@@ -26,8 +26,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 10% 0%, rgba(255, 94, 168, 0.09), transparent 30rem),
-    radial-gradient(circle at 90% 12%, rgba(162, 139, 255, 0.08), transparent 32rem),
+    radial-gradient(circle at 10% 0%, rgba(47, 211, 162, 0.12), transparent 30rem),
+    radial-gradient(circle at 90% 12%, rgba(15, 128, 104, 0.14), transparent 32rem),
     var(--background);
   color: var(--text);
   font-family:
@@ -61,7 +61,7 @@ iframe {
 
 ::selection {
   background: var(--accent);
-  color: #111;
+  color: #04110d;
 }
 
 .page-noise {
@@ -83,7 +83,7 @@ iframe {
   height: 360px;
   border-radius: 50%;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(255, 94, 168, 0.12), transparent 65%);
+  background: radial-gradient(circle, rgba(47, 211, 162, 0.16), transparent 65%);
   transform: translate(-50%, -50%);
   filter: blur(6px);
   opacity: 0;
@@ -319,7 +319,7 @@ iframe {
   border-radius: 30px;
   background:
     linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.76) 100%),
-    linear-gradient(135deg, #4b1739 0%, #dd568f 48%, #ffbc69 100%);
+    linear-gradient(135deg, #052f29 0%, #0f8068 48%, #b7f0d4 100%);
 }
 
 .poster-gradient {
@@ -327,7 +327,7 @@ iframe {
   inset: -12%;
   background:
     radial-gradient(circle at 25% 20%, rgba(255, 255, 255, 0.7), transparent 13%),
-    radial-gradient(circle at 78% 32%, rgba(162, 139, 255, 0.7), transparent 22%),
+    radial-gradient(circle at 78% 32%, rgba(47, 211, 162, 0.58), transparent 22%),
     linear-gradient(135deg, transparent 25%, rgba(0, 0, 0, 0.18) 26%, transparent 27%);
   filter: blur(3px);
   transform: rotate(-8deg);
@@ -584,9 +584,9 @@ iframe {
 
 .project-media-roya {
   background:
-    radial-gradient(circle at 76% 23%, rgba(255, 188, 105, 0.85), transparent 22%),
-    radial-gradient(circle at 20% 76%, rgba(162, 139, 255, 0.8), transparent 25%),
-    linear-gradient(145deg, #6f1c4e, #ee4f95 56%, #f6b45d);
+    radial-gradient(circle at 76% 23%, rgba(183, 240, 212, 0.78), transparent 22%),
+    radial-gradient(circle at 20% 76%, rgba(15, 128, 104, 0.72), transparent 25%),
+    linear-gradient(145deg, #063b33, #0f8068 56%, #b7f0d4);
 }
 
 .media-label {
@@ -642,7 +642,7 @@ iframe {
 .project-media-placeholder {
   border-bottom: 1px dashed var(--line);
   background:
-    linear-gradient(135deg, rgba(255, 94, 168, 0.06), rgba(162, 139, 255, 0.06)),
+    linear-gradient(135deg, rgba(47, 211, 162, 0.07), rgba(15, 128, 104, 0.08)),
     #111116;
 }
 
@@ -726,8 +726,8 @@ iframe {
   border: 1px solid var(--line);
   border-radius: var(--radius-large);
   background:
-    radial-gradient(circle at 10% 20%, rgba(255, 94, 168, 0.11), transparent 30%),
-    radial-gradient(circle at 90% 80%, rgba(162, 139, 255, 0.1), transparent 28%),
+    radial-gradient(circle at 10% 20%, rgba(47, 211, 162, 0.13), transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(15, 128, 104, 0.13), transparent 28%),
     var(--surface);
 }
 
@@ -787,7 +787,7 @@ iframe {
   border: 1px solid var(--line);
   border-radius: var(--radius-large);
   background:
-    linear-gradient(135deg, rgba(255, 94, 168, 0.18), rgba(162, 139, 255, 0.14)),
+    linear-gradient(135deg, rgba(47, 211, 162, 0.18), rgba(15, 128, 104, 0.18)),
     var(--surface);
   text-align: center;
 }

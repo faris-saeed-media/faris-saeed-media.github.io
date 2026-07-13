@@ -51,9 +51,9 @@ The main colors are at the top of `style.css`:
 ```css
 :root {
   --background: #0b0b0d;
-  --accent: #ff5ea8;
-  --accent-2: #a28bff;
-  --accent-3: #ffb35c;
+  --accent: #2fd3a2;
+  --accent-2: #0f8068;
+  --accent-3: #b7f0d4;
 }
 ```
 
@@ -79,3 +79,14 @@ The gallery uses:
 - left and right arrow keyboard navigation
 
 To change an image caption, edit the matching `data-caption` value in `index.html`.
+
+
+## Phthalo green update
+
+This version changes the site palette to deep phthalo green, teal, and mint.
+
+It also changes the location language to:
+
+`Open to relocation opportunities`
+
+This download intentionally does not contain a résumé PDF. Keep the safe résumé already inside your repository's `assets` folder.
