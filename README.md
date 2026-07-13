@@ -90,3 +90,24 @@ It also changes the location language to:
 `Open to relocation opportunities`
 
 This download intentionally does not contain a résumé PDF. Keep the safe résumé already inside your repository's `assets` folder.
+
+
+## Roya Media Group portfolio section
+
+This version expects both logo files to already exist inside `assets`:
+
+- `assets/roya_transparent.png`
+- `assets/roya_logo.jpg`
+
+The transparent PNG is used first. The JPG is used automatically as a fallback.
+
+The Roya project card now links to a dedicated case study containing:
+
+- role and platform metrics
+- a featured Instagram Reel
+- an embedded YouTube video
+- all supplied Instagram links
+- a show more button
+- a reusable Instagram modal
+
+The archive labels are intentionally generic because only URLs were supplied. Replace labels like `Reel 01` with the actual story headlines inside `index.html` as you refine the portfolio.

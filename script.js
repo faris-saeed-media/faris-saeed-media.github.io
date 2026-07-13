@@ -75,14 +75,40 @@ siteNav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
+const instagramEmbedSlot = document.querySelector(".instagram-embed-slot");
+const reelExternalLink = document.querySelector(".reel-external-link");
+const modalTitle = document.querySelector(".modal-title");
+
+const renderInstagramEmbed = (url, title) => {
+  modalTitle.textContent = title || "Roya digital journalism";
+  reelExternalLink.href = url;
+
+  instagramEmbedSlot.innerHTML = `
+    <blockquote
+      class="instagram-media"
+      data-instgrm-captioned
+      data-instgrm-permalink="${url}"
+      data-instgrm-version="14"
+    >
+      <a href="${url}" target="_blank" rel="noopener">
+        View this work on Instagram
+      </a>
+    </blockquote>
+  `;
+
+  if (window.instgrm?.Embeds) {
+    window.instgrm.Embeds.process();
+  }
+};
+
 openReelButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    const reelUrl = button.dataset.reel;
+    const reelTitle = button.dataset.title || "Roya digital journalism";
+
+    renderInstagramEmbed(reelUrl, reelTitle);
     modal.showModal();
     document.body.classList.add("modal-open");
-
-    if (window.instgrm?.Embeds) {
-      window.instgrm.Embeds.process();
-    }
   });
 });
 
@@ -196,4 +222,16 @@ galleryLightbox?.addEventListener("click", (event) => {
 galleryLightbox?.addEventListener("keydown", (event) => {
   if (event.key === "ArrowLeft") updateGalleryLightbox(activeGalleryIndex - 1);
   if (event.key === "ArrowRight") updateGalleryLightbox(activeGalleryIndex + 1);
+});
+
+
+const royaArchive = document.querySelector(".roya-archive");
+const royaShowMore = document.querySelector(".roya-show-more");
+
+royaShowMore?.addEventListener("click", () => {
+  const expanded = royaArchive.classList.toggle("expanded");
+  royaShowMore.setAttribute("aria-expanded", String(expanded));
+  royaShowMore.textContent = expanded
+    ? "Show fewer Instagram pieces"
+    : "Show all Instagram work";
 });
