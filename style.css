@@ -2636,3 +2636,329 @@ iframe {
     margin-top: 18px;
   }
 }
+
+
+/* HUUPE card and case study */
+#huupe-work {
+  scroll-margin-top: 120px;
+}
+
+.project-media-huupe {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(183, 240, 212, 0.25), transparent 25%),
+    radial-gradient(circle at 15% 82%, rgba(47, 211, 162, 0.18), transparent 30%),
+    linear-gradient(145deg, #101516, #162a27);
+}
+
+.huupe-card-brand {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: min(78%, 430px);
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  transform: rotate(-5deg);
+}
+
+.huupe-logo-plate,
+.huupe-section-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #ffffff;
+  box-shadow: 0 22px 65px rgba(0, 0, 0, 0.3);
+}
+
+.huupe-logo-plate {
+  width: 100%;
+  min-height: 150px;
+  padding: 28px;
+  border-radius: 28px;
+}
+
+.huupe-logo-plate img {
+  display: block;
+  width: min(100%, 310px);
+  max-height: 92px;
+  object-fit: contain;
+}
+
+.huupe-card-brand > span {
+  align-self: flex-end;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.18);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.huupe-work-section {
+  position: relative;
+  isolation: isolate;
+  padding: 112px 0;
+}
+
+.huupe-work-section::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(circle at 14% 18%, rgba(183, 240, 212, 0.09), transparent 30rem),
+    radial-gradient(circle at 88% 82%, rgba(47, 211, 162, 0.08), transparent 28rem),
+    linear-gradient(180deg, #0d1112, #0a0d0e);
+  pointer-events: none;
+}
+
+.huupe-work-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(183, 240, 212, 0.38),
+    transparent
+  );
+}
+
+.work-chapter-huupe .work-chapter-copy h2 {
+  color: var(--text);
+}
+
+.huupe-case-study {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 70px;
+  padding: clamp(30px, 6vw, 72px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background:
+    radial-gradient(circle at 12% 12%, rgba(47, 211, 162, 0.1), transparent 30%),
+    var(--surface);
+  box-shadow: 0 28px 75px rgba(0, 0, 0, 0.2);
+}
+
+.huupe-case-study-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.huupe-section-logo {
+  width: fit-content;
+  min-width: 220px;
+  min-height: 96px;
+  padding: 20px 28px;
+  border-radius: 22px;
+}
+
+.huupe-section-logo img {
+  display: block;
+  width: min(250px, 48vw);
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.huupe-case-study h3,
+.huupe-work-heading h3 {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 5rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.huupe-case-study-copy {
+  align-self: end;
+}
+
+.huupe-case-study-copy > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.huupe-role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.huupe-role-tags span {
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 0.82rem;
+}
+
+.huupe-work-heading {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: end;
+  margin: 90px 0 28px;
+}
+
+.huupe-work-heading > p {
+  max-width: 570px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.03rem;
+}
+
+.huupe-video-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.5fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.huupe-video-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background:
+    linear-gradient(145deg, rgba(47, 211, 162, 0.06), transparent),
+    var(--surface);
+}
+
+.huupe-video-card-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.huupe-video-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.huupe-video-card h4 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.8rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.huupe-youtube-embed,
+.huupe-short-embed {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #000;
+}
+
+.huupe-youtube-embed {
+  aspect-ratio: 16 / 9;
+}
+
+.huupe-short-embed {
+  width: min(100%, 350px);
+  aspect-ratio: 9 / 16;
+  align-self: center;
+}
+
+.huupe-youtube-embed iframe,
+.huupe-short-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.huupe-video-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.huupe-video-footer span {
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.zaytoon-work-section + .huupe-work-section {
+  margin-top: 34px;
+}
+
+.huupe-work-section + .appointment-gallery-section {
+  margin-top: 34px;
+  padding-top: 130px;
+  border-top: 1px solid var(--line);
+}
+
+/* Cancel the older direct @realzaytoon-to-Appointment spacing now that HUUPE sits between them. */
+.zaytoon-work-section + .appointment-gallery-section {
+  margin-top: 0;
+  padding-top: 100px;
+  border-top: 0;
+}
+
+@media (max-width: 1000px) {
+  .huupe-case-study,
+  .huupe-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .huupe-short-embed {
+    width: min(100%, 430px);
+  }
+}
+
+@media (max-width: 760px) {
+  .huupe-work-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .huupe-case-study {
+    gap: 34px;
+  }
+
+  .huupe-work-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .huupe-video-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .zaytoon-work-section + .huupe-work-section,
+  .huupe-work-section + .appointment-gallery-section {
+    margin-top: 18px;
+  }
+}

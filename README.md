@@ -234,3 +234,28 @@ The five main cards now use direct project or organization names:
 5. Seagull Media
 
 The unfinished placeholder card was removed so the section only contains completed work.
+
+
+## HUUPE work sample
+
+This version expects the following logo file inside the existing assets folder:
+
+`assets/huupe_logo.jpg`
+
+The HUUPE card now uses the real logo and links to a dedicated HUUPE case study.
+
+The detailed work order is now:
+
+1. Roya Media Group
+2. @realzaytoon
+3. HUUPE
+4. The Appointment
+
+The HUUPE case study contains:
+
+- Executive Producer responsibilities
+- embedded long form YouTube launch video
+- embedded vertical YouTube Short
+- direct links to both videos
+
+The supplied video tracking parameters were removed from the clean portfolio URLs.
