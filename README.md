@@ -457,3 +457,14 @@ The section now moves directly from the chapter heading into:
 - three selected Instagram Reels
 
 Redundant campaign and entertainment headings were removed.
+
+
+## Seamless Beat FM refinement
+
+The Beat FM section is now more compact:
+
+- the logo, role, description, and stats share one horizontal row
+- the separate stat boxes were removed
+- the Reel intro sentence was removed
+- the Reel cards are shorter and no longer repeat the logo
+- the Reel section now flows directly from `Featured Reels` into the three samples
