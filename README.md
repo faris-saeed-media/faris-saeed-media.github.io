@@ -431,3 +431,13 @@ The section hierarchy is now:
 - small supporting line: `Journalism, production, and on camera storytelling.`
 
 This keeps the descriptive text without competing with the main section title.
+
+
+## Roya platform-scale update
+
+The `31.5K likes on featured Reel` metric was removed.
+
+The remaining figures are now introduced as platform-scale metrics showing the size of Roya Media Group's YouTube and Instagram audiences:
+
+- 1.44M+ YouTube subscribers
+- 720K+ Instagram followers

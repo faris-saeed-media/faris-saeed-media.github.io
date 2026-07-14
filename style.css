@@ -4805,3 +4805,41 @@ a {
     font-size: 1rem;
   }
 }
+
+
+/* Roya platform-scale framing */
+.roya-platform-scale {
+  display: grid;
+  grid-template-columns: 0.45fr 1.55fr;
+  gap: 40px;
+  align-items: end;
+  margin-top: 58px;
+  margin-bottom: 20px;
+}
+
+.roya-platform-scale p {
+  margin: 0;
+}
+
+.roya-platform-scale > p:last-child {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.roya-metrics-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 760px) {
+  .roya-platform-scale {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 42px;
+  }
+
+  .roya-metrics-two {
+    grid-template-columns: 1fr;
+  }
+}
