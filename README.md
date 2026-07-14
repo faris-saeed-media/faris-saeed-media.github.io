@@ -421,3 +421,13 @@ The hero Reel language is now broader and portfolio focused:
 - `A quick look at my original short form work.`
 
 The Lebanon specific description was removed from the hero card.
+
+
+## Selected Work heading update
+
+The section hierarchy is now:
+
+- large `Selected Work` title
+- small supporting line: `Journalism, production, and on camera storytelling.`
+
+This keeps the descriptive text without competing with the main section title.

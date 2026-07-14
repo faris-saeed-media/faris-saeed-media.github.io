@@ -4767,3 +4767,41 @@ a {
     width: 100%;
   }
 }
+
+
+/* Selected Work heading hierarchy */
+.work-heading {
+  grid-template-columns: 1fr 0.8fr;
+  align-items: end;
+}
+
+.work-heading h2 {
+  margin: 0;
+  font-size: clamp(4.8rem, 10vw, 10rem);
+  line-height: 0.84;
+  letter-spacing: -0.075em;
+}
+
+.work-heading-subtitle {
+  max-width: 520px;
+  margin: 0 0 10px auto;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.7vw, 1.35rem);
+  line-height: 1.5;
+}
+
+@media (max-width: 820px) {
+  .work-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .work-heading h2 {
+    font-size: clamp(4rem, 18vw, 6.5rem);
+  }
+
+  .work-heading-subtitle {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
