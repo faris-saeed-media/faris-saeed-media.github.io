@@ -441,3 +441,19 @@ The remaining figures are now introduced as platform-scale metrics showing the s
 
 - 1.44M+ YouTube subscribers
 - 720K+ Instagram followers
+
+
+## Compact Beat FM section
+
+The oversized two-panel introduction was removed.
+
+The section now moves directly from the chapter heading into:
+
+- Beat FM logo
+- role
+- one concise description
+- 7K+ engagements
+- 10+ collaborations
+- three selected Instagram Reels
+
+Redundant campaign and entertainment headings were removed.

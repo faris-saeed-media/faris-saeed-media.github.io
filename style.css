@@ -4843,3 +4843,177 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Compact 102.5 Beat FM layout */
+.beat-work-section-compact {
+  padding-bottom: 92px;
+}
+
+.beat-compact-overview {
+  display: grid;
+  grid-template-columns: 0.42fr 1.18fr 0.7fr;
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+.beat-compact-logo,
+.beat-compact-role,
+.beat-compact-stats {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+}
+
+.beat-compact-logo {
+  display: flex;
+  min-height: 235px;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 70% 18%, rgba(183, 240, 212, 0.16), transparent 30%),
+    var(--surface);
+}
+
+.beat-compact-logo img {
+  display: block;
+  width: min(100%, 220px);
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.beat-compact-role {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 34px;
+}
+
+.beat-compact-role h3 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2rem, 3.6vw, 3.9rem);
+  line-height: 0.98;
+  letter-spacing: -0.052em;
+}
+
+.beat-compact-role > p:last-child {
+  max-width: 690px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.beat-compact-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 12px;
+}
+
+.beat-compact-stats div {
+  display: flex;
+  min-height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.beat-compact-stats strong {
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.beat-compact-stats span {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.beat-reel-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 34px;
+  margin: 62px 0 22px;
+}
+
+.beat-reel-heading h3 {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.beat-reel-heading > p {
+  max-width: 420px;
+  margin: 0 0 7px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.beat-reel-grid-compact .beat-reel-card {
+  min-height: 310px;
+}
+
+.beat-reel-grid-compact .beat-reel-logo {
+  width: 132px;
+  min-height: 72px;
+}
+
+.beat-reel-grid-compact .beat-reel-card h4 {
+  font-size: clamp(1.55rem, 2.5vw, 2.35rem);
+}
+
+@media (max-width: 1000px) {
+  .beat-compact-overview {
+    grid-template-columns: 0.7fr 1.3fr;
+  }
+
+  .beat-compact-stats {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .beat-compact-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .beat-compact-logo {
+    min-height: 170px;
+  }
+
+  .beat-compact-role {
+    padding: 26px;
+  }
+
+  .beat-compact-stats {
+    grid-column: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .beat-reel-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 48px;
+  }
+
+  .beat-reel-heading > p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .beat-compact-stats {
+    grid-template-columns: 1fr;
+  }
+}
