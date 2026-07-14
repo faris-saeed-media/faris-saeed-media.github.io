@@ -345,3 +345,15 @@ Tested breakpoints:
 
 - tablet and small laptop: 820px and below
 - standard phones: 520px and below
+
+
+## Mobile hero layout fix
+
+The portrait and featured Reel card now stack vertically on phones and tablets.
+
+This removes the previous overlap that caused:
+
+- the portrait to be hidden behind the card
+- the featured card to extend beyond the visible screen
+- large blank areas in the hero
+- awkward cropping on narrow devices
