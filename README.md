@@ -357,3 +357,14 @@ This removes the previous overlap that caused:
 - the featured card to extend beyond the visible screen
 - large blank areas in the hero
 - awkward cropping on narrow devices
+
+
+## 102.5 Beat FM update
+
+The former Seagull Media card and detailed section are now branded as `102.5 Beat FM`.
+
+This version expects this file inside the existing assets folder:
+
+`assets/beat_1025_logo.png`
+
+The section includes the three supplied Instagram Reel samples. Tracking parameters were removed from the portfolio URLs.
