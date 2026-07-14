@@ -380,3 +380,9 @@ The project is labeled `Coming soon` and includes this IMDb link:
 `https://www.imdb.com/title/tt39388257/`
 
 The 100K+ campaign-impressions metric was also removed from the 102.5 Beat FM section.
+
+
+## Role and film credit update
+
+- HUUPE now lists Faris as `Co Producer`
+- The Appointment is now identified as a `Short Film by Zaid Sater`
