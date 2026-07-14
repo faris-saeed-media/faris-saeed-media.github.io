@@ -397,3 +397,27 @@ Card 06 now includes:
 - a compact expandable `View project preview` banner
 - a short coming soon message styled like The Appointment banner
 - the existing IMDb link
+
+
+## LinkedIn button
+
+A LinkedIn button was added to the hero beside the Instagram and TikTok links:
+
+`https://www.linkedin.com/in/faris-saeed-aa30a2390`
+
+
+## Social icons moved to navigation
+
+Instagram, LinkedIn, and TikTok were moved from the hero into the top navigation.
+
+The icons are inline SVG, so no additional image files are required in the assets folder.
+
+
+## Featured Reel copy update
+
+The hero Reel language is now broader and portfolio focused:
+
+- `FEATURED ORIGINAL REEL`
+- `A quick look at my original short form work.`
+
+The Lebanon specific description was removed from the hero card.
