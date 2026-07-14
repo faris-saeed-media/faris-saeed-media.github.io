@@ -4592,3 +4592,82 @@ a {
     margin-top: 18px;
   }
 }
+
+
+/* Compact Occupational Hazards preview inside card 06 */
+.occupational-card-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.occupational-preview-dropdown {
+  width: 100%;
+}
+
+.occupational-preview-dropdown summary {
+  width: fit-content;
+  list-style: none;
+  color: var(--accent-3);
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 180ms ease;
+}
+
+.occupational-preview-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.occupational-preview-dropdown summary:hover {
+  color: var(--accent);
+}
+
+.occupational-preview-dropdown[open] summary {
+  margin-bottom: 14px;
+}
+
+.occupational-preview-banner {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  width: 100%;
+  padding: 18px;
+  border: 1px solid rgba(183, 240, 212, 0.24);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(47, 211, 162, 0.08), transparent),
+    rgba(255, 255, 255, 0.025);
+}
+
+.occupational-preview-dot {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 7px rgba(47, 211, 162, 0.1);
+}
+
+.occupational-preview-banner strong {
+  display: block;
+  font-size: 0.98rem;
+}
+
+.occupational-preview-banner p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.occupational-imdb-card-link {
+  width: fit-content;
+}
+
+@media (max-width: 820px) {
+  .occupational-preview-banner {
+    padding: 16px;
+  }
+}

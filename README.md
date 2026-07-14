@@ -386,3 +386,14 @@ The 100K+ campaign-impressions metric was also removed from the 102.5 Beat FM se
 
 - HUUPE now lists Faris as `Co Producer`
 - The Appointment is now identified as a `Short Film by Zaid Sater`
+
+
+## Compact Occupational Hazards preview
+
+The large standalone Occupational Hazards chapter was removed.
+
+Card 06 now includes:
+
+- a compact expandable `View project preview` banner
+- a short coming soon message styled like The Appointment banner
+- the existing IMDb link
