@@ -4335,3 +4335,260 @@ a {
     min-height: 300px;
   }
 }
+
+
+/* Beat FM metrics now use two columns */
+.beat-metrics-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Occupational Hazards card */
+.project-media-occupational {
+  background:
+    linear-gradient(180deg, transparent 18%, rgba(0, 0, 0, 0.7)),
+    radial-gradient(circle at 72% 20%, rgba(183, 240, 212, 0.2), transparent 24%),
+    linear-gradient(145deg, #11120f, #303026 58%, #151713);
+}
+
+.occupational-card-copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: min(82%, 520px);
+  min-height: 260px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent),
+    rgba(0, 0, 0, 0.3);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  transform: rotate(-4deg);
+  backdrop-filter: blur(12px);
+}
+
+.occupational-coming-soon,
+.occupational-status {
+  width: fit-content;
+  padding: 8px 12px;
+  border: 1px solid rgba(183, 240, 212, 0.35);
+  border-radius: 999px;
+  background: rgba(47, 211, 162, 0.08);
+  color: var(--accent-3);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.occupational-title-lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.occupational-title-lockup small {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.occupational-title-lockup strong {
+  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  line-height: 0.86;
+  letter-spacing: -0.075em;
+}
+
+.occupational-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+/* Occupational Hazards detailed chapter */
+#occupational-hazards {
+  scroll-margin-top: 120px;
+}
+
+.work-chapter-occupational .work-chapter-copy h2 {
+  color: var(--text);
+}
+
+.occupational-work-section {
+  position: relative;
+  isolation: isolate;
+  padding: 112px 0;
+}
+
+.occupational-work-section::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(circle at 16% 18%, rgba(183, 240, 212, 0.08), transparent 30rem),
+    radial-gradient(circle at 88% 78%, rgba(47, 211, 162, 0.07), transparent 28rem),
+    linear-gradient(180deg, #0d0e0c, #090a09);
+  pointer-events: none;
+}
+
+.occupational-work-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(183, 240, 212, 0.34),
+    transparent
+  );
+}
+
+.occupational-preview {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 18px;
+}
+
+.occupational-preview-copy,
+.occupational-poster-placeholder {
+  min-height: 520px;
+  padding: clamp(30px, 5vw, 58px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background: var(--surface);
+  box-shadow: 0 28px 75px rgba(0, 0, 0, 0.2);
+}
+
+.occupational-preview-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.occupational-preview-copy .eyebrow {
+  margin-top: 34px;
+}
+
+.occupational-preview-copy h3 {
+  max-width: 730px;
+  margin: 0;
+  font-size: clamp(2.8rem, 5vw, 5.1rem);
+  line-height: 0.95;
+  letter-spacing: -0.058em;
+}
+
+.occupational-preview-copy > p:last-of-type {
+  max-width: 690px;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.occupational-imdb-link {
+  width: fit-content;
+  margin-top: 26px;
+}
+
+.occupational-poster-placeholder {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.62)),
+    radial-gradient(circle at 72% 18%, rgba(183, 240, 212, 0.18), transparent 23%),
+    linear-gradient(145deg, #2b2c24, #10110e);
+}
+
+.occupational-poster-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    repeating-linear-gradient(
+      115deg,
+      transparent 0 70px,
+      rgba(255, 255, 255, 0.035) 71px 72px
+    );
+  transform: rotate(-5deg);
+}
+
+.occupational-poster-placeholder > * {
+  position: relative;
+  z-index: 1;
+}
+
+.occupational-poster-placeholder > span {
+  color: var(--accent-3);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+}
+
+.occupational-poster-placeholder strong {
+  font-size: clamp(3.1rem, 6vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.085em;
+}
+
+.occupational-poster-placeholder small {
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.beat-work-section + .occupational-work-section {
+  margin-top: 34px;
+}
+
+.occupational-work-section + .skills-strip-section {
+  margin-top: 34px;
+}
+
+@media (max-width: 900px) {
+  .beat-metrics-two,
+  .occupational-preview {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .occupational-work-section {
+    padding-top: 78px;
+    padding-bottom: 78px;
+  }
+
+  .occupational-preview-copy,
+  .occupational-poster-placeholder {
+    min-height: 0;
+    padding: 26px;
+  }
+
+  .occupational-poster-placeholder {
+    min-height: 420px;
+  }
+
+  .occupational-card-actions {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .beat-work-section + .occupational-work-section,
+  .occupational-work-section + .skills-strip-section {
+    margin-top: 18px;
+  }
+}

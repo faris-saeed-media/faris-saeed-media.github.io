@@ -368,3 +368,15 @@ This version expects this file inside the existing assets folder:
 `assets/beat_1025_logo.png`
 
 The section includes the three supplied Instagram Reel samples. Tracking parameters were removed from the portfolio URLs.
+
+
+## Occupational Hazards
+
+A sixth Selected Work card and detailed chapter were added for the upcoming acting role in
+Bassel Ghandour's `Occupational Hazards`.
+
+The project is labeled `Coming soon` and includes this IMDb link:
+
+`https://www.imdb.com/title/tt39388257/`
+
+The 100K+ campaign-impressions metric was also removed from the 102.5 Beat FM section.
