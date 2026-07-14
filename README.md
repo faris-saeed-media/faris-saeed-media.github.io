@@ -468,3 +468,15 @@ The Beat FM section is now more compact:
 - the Reel intro sentence was removed
 - the Reel cards are shorter and no longer repeat the logo
 - the Reel section now flows directly from `Featured Reels` into the three samples
+
+
+## Seamless HUUPE section
+
+The HUUPE introduction now uses one compact row for:
+
+- logo
+- Co Producer role
+- concise project summary
+- production responsibilities
+
+The oversized introductory box and awkward split alignment were removed. The selected campaign heading now sits directly above the two video samples with less empty space.
