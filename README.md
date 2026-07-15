@@ -490,3 +490,14 @@ Removed:
 - the internal placeholder note about replacing Roya archive labels with headlines
 
 The Roya archive keeps only the useful viewer instruction.
+
+
+## @realzaytoon title clipping fix
+
+The gradient title had an overly tight line height, which clipped the bottom of letters such as `y`.
+
+The title now has:
+
+- slightly more line height
+- bottom padding for descenders
+- visible overflow

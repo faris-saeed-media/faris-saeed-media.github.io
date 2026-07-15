@@ -5308,3 +5308,14 @@ a {
 .roya-archive-heading > p {
   max-width: 480px;
 }
+
+
+/* Prevent the @realzaytoon wordmark descenders from being clipped */
+.work-chapter-zaytoon .work-chapter-copy h2 {
+  display: inline-block;
+  overflow: visible;
+  padding-bottom: 0.12em;
+  line-height: 1;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
