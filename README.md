@@ -480,3 +480,13 @@ The HUUPE introduction now uses one compact row for:
 - production responsibilities
 
 The oversized introductory box and awkward split alignment were removed. The selected campaign heading now sits directly above the two video samples with less empty space.
+
+
+## Cleaner heading copy
+
+Removed:
+
+- `Journalism, production, and on camera storytelling.` beside Selected Work
+- the internal placeholder note about replacing Roya archive labels with headlines
+
+The Roya archive keeps only the useful viewer instruction.

@@ -5294,3 +5294,17 @@ a {
     margin-top: 42px;
   }
 }
+
+
+/* Cleaner heading layouts */
+.work-heading {
+  grid-template-columns: 1fr;
+}
+
+.work-heading > div {
+  max-width: 100%;
+}
+
+.roya-archive-heading > p {
+  max-width: 480px;
+}
